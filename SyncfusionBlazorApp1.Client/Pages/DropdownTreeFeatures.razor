@@ -1,0 +1,25 @@
+﻿@page "/dropdowntree-features"
+@rendermode InteractiveAuto
+
+@using Syncfusion.Blazor.Navigations
+<PageTitle>DropdownTree</PageTitle>
+<SfDropDownTree TItem="Data" 
+    TValue="string" 
+    ID="list" 
+    Placeholder="Select a Category" 
+    AutoUpdateCheckState="true" 
+    AllowFiltering="true" 
+    ShowCheckBox="true" 
+    AllowMultiSelection="true" 
+    DelimiterChar=","
+    Mode="DdtVisualMode.Box">
+    <DropDownTreeField 
+        TItem="Data" 
+        DataSource="@_categories" 
+        ID="@(nameof(Data.Id))" 
+        Text="@(nameof(Data.Name))" 
+        HasChildren="@(nameof(Data.ShouldHasChildren))" 
+        ParentID="@(nameof(Data.Pid))"
+    ></DropDownTreeField>
+</SfDropDownTree>
+
