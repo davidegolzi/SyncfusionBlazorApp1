@@ -8,9 +8,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SyncfusionBlazorApp1.Client\SyncfusionBlazorApp1.Client.csproj" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.4" />
-            <PackageReference Include="Syncfusion.Blazor.Navigations" Version="25.1.42" />
-    <PackageReference Include="Syncfusion.Blazor.Themes" Version="25.1.42" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.6" />
+            <PackageReference Include="Syncfusion.Blazor.Navigations" Version="26.1.35" />
+    <PackageReference Include="Syncfusion.Blazor.Themes" Version="26.1.35" />
   </ItemGroup>
 
 </Project>
